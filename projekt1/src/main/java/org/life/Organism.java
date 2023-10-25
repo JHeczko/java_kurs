@@ -6,16 +6,20 @@ public class Organism {
 
   private int energy;
   private Position position;
+
+  protected int range;
+
   private Random random = new Random();
 
   public Organism(int energy) {
     this.energy = energy;
+    this.range = 1;
   }
 
-  public void move() {
+  public int[] move() {
     int newX = position.getX();
     int newY = position.getY();
-
+    int[] vec = new int[2];
     // Decide whether to move vertically or horizontally
     boolean moveVertically = random.nextBoolean();
 
@@ -26,7 +30,9 @@ public class Organism {
       // Move left or right by 1
       newX += random.nextBoolean() ? 1 : -1;
     }
-
+    vec[0] = newX;
+    vec[1] = newY;
+    return vec;
     // TODO: Use the board's moveOrganism method to move the organism
   }
 

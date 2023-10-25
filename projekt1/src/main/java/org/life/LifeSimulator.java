@@ -1,9 +1,14 @@
 package org.life;
 
+import java.util.Random;
+import java.lang.Thread;
+import java.util.Scanner;
+import java.util.Scanner.*;
+
 public class LifeSimulator {
 
   public static void main(String[] args) {
-    Board board = new Board(10, 10);
+    Board board = new Board(15, 15);
     /* TODO:
      - Add at least 2 classes that implement the Organism interface.
      - The new classes should possess unique abilities, such as:
@@ -14,8 +19,49 @@ public class LifeSimulator {
      - Implement a mechanism where an Organism consumes another (taking all its energy) when it occupies the same space.
      - Run simulation for some time, eg. when there is only one Organism left
      */
-    Organism organism = new Organism(100);
-    board.addOrganism(organism, 5, 5);
-    organism.move();
+    Random rand = new Random();
+    int countAdd = 0;
+    Organism[] arrOrg = new Organism[10];
+    for(int i = 0; i < 10; i++){
+      arrOrg[i] = new Organism(100);
+    }
+    while(countAdd != 10){
+      int x = rand.nextInt(14);
+      int y = rand.nextInt(14);
+      if(board.addOrganism(arrOrg[countAdd],x,y)){
+        countAdd++;
+      }
+    }
+  while(true){
+    for(int i = 0; i < 10; i++){
+      if(board.getCount() == 1){
+        break;
+      }
+      board.moveOrganism(arrOrg[i]);
+      System.out.println("Zostalo: " + board.getCount() + " graczy");
+      try {
+        Thread.sleep(200);
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+      }
+    }
+  }
+
+
+//Sterowanie reczne:
+//    Scanner skaner = new Scanner(System.in);
+//    int in = 0;
+//    do{
+//      System.out.println("Wybieerz opcje:\n1) Zrob losowy ruch\n2) Koniec gry\n3) Pokaz licznik graczy");
+//      in = skaner.nextInt();
+//      switch(in){
+//        case 2:
+//          break;
+//        case 3:
+//          System.out.println(board.getCount());
+//      }
+//      board.moveOrganism((organism1));
+//    }while(true);
+
   }
 }
