@@ -24,9 +24,18 @@ public class Board {
   public void moveOrganism(Organism organism, int newX, int newY) {
     // TODO implement that one organism eats the other
     if (newX >= 0 && newX < width && newY >= 0 && newY < height && organisms[newX][newY] == null) {
-      organisms[organism.getPosition().getX()][organism.getPosition().getY()] = null;
-      organisms[newX][newY] = organism;
-      organism.setPosition(new Position(newX, newY));
+      if(organisms[newX][newY] != null) {
+        organisms[organism.getPosition().getX()][organism.getPosition().getY()] = null;
+        organisms[newX][newY] = organism;
+        organism.setPosition(new Position(newX, newY));
+      } else{
+          this.organisms[newX][newY].loseEnergy(-50);
+
+          if(this.organisms[newX][newY].isDead()){
+            this.organisms[newX][newY] = null;
+            this.organisms[newX][newY] = organism;
+          }
+      }
     } else {
       System.out.println("Invalid move!");
     }

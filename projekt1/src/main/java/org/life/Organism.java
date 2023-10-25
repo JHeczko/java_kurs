@@ -34,6 +34,13 @@ public class Organism {
     this.position = position;
   }
 
+  public void loseEnergy(int lose){
+    this.energy -= lose;
+  }
+
+  public boolean isDead(){
+    return (this.energy == 0);
+  }
   public Position getPosition() {
     return position;
   }
