@@ -36,7 +36,7 @@ public class Board {
       for(int j = 1; j <= range; j++){
         if((pos[0] + j*i) >= 0 && (pos[0]+j*i) < width && (pos[1]+j*i) >= 0 && (pos[1]+j*i) < height ){
           if(organisms[pos[0]+j*i][pos[1]] != null){
-            organisms[pos[0]+j*i][pos[1]].loseEnergy(50);
+            organisms[pos[0]+j*i][pos[1]].loseEnergy(organism.attack);
             if(organisms[pos[0]+j*i][pos[1]].isDead()){
               System.out.println("Przeciwnik nie zyje na pozycji: " + (pos[0]+j*i) + " " + pos[1]);
               organisms[pos[0]+j*i][pos[1]] = null;
@@ -45,7 +45,7 @@ public class Board {
             System.out.println("Zaatakowalem przeciwnika na pozycji: " + (pos[0]+j*i) + " " + pos[1]);
           }
           if(organisms[pos[0]][pos[1]+j*i] != null){
-            organisms[pos[0]][pos[1]+j*i].loseEnergy(50);
+            organisms[pos[0]][pos[1]+j*i].loseEnergy(organism.attack);
             if(organisms[pos[0]][pos[1]+j*i].isDead()){
               System.out.println("Przeciwnik nie zyje na pozycji: " + pos[0] + " " + pos[1]+j*i);
               organisms[pos[0]][pos[1]+j*i] = null;
@@ -71,7 +71,18 @@ public class Board {
 //        System.out.println("Making move to " + organism.getPosition().getX() + "X and" + organism.getPosition().getY()  + "Y");
       //organism is going to attack around his center 1 up, 1 down, 1 left, 1 right, its basic stats
       } else {
-      System.out.println("Invalid move!");
+//      System.out.println("Invalid move!");
     }
+  }
+  public int endgame(){
+    for(int i = 0; i < width; i++){
+      for(int j = 0; j < height; j++){
+        if(organisms[i][j] != null){
+          System.out.println("\n Wygrał organizm klasy: " + organisms[i][j].name);
+          return 1;
+        }
+      }
+    }
+    return -1;
   }
 }

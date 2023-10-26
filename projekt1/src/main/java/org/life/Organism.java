@@ -4,16 +4,19 @@ import java.util.Random;
 
 public class Organism {
 
-  private int energy;
-  private Position position;
-
+  protected String name;
+  protected int attack;
+  protected int energy;
   protected int range;
+  protected Position position;
 
-  private Random random = new Random();
+  protected final Random random = new Random();
 
-  public Organism(int energy) {
+  public Organism(int energy, int attack, int range, String name) {
     this.energy = energy;
-    this.range = 1;
+    this.attack = attack;
+    this.range = range;
+    this.name = name;
   }
 
   public int[] move() {
@@ -45,7 +48,7 @@ public class Organism {
   }
 
   public boolean isDead(){
-    return (this.energy == 0);
+    return (this.energy == 0 || this.energy < 0);
   }
   public Position getPosition() {
     return position;
