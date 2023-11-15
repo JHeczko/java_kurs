@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b87d88a-e521-40a6-a33d-f7b33c189da8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/projekt1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/out/production/java2023public/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/out/production/java2023public/org/leapyear/LeapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/main/java/org/studentresource/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/main/java/org/studentresource/StudentResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/main/java/org/studentresource/StudentResourceManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/main/java/org/studentresource/decorator/CommentableResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/main/java/org/studentresource/decorator/ResourceDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/test/java/org/studentresource/StudentResourceManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/test/java/org/studentresource/decorator/CommentableAndRateableResourceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projekt1/src/test/java/org/studentresource/decorator/CommentableResourceTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2YDGcFqrtlJVfkkkgIpOk4oLl9G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jakubheczko/Documents/Java/java_zadania",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b87d88a-e521-40a6-a33d-f7b33c189da8" name="Changes" comment="" />
+      <created>1700052813277</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700052813277</updated>
+      <workItem from="1700052814340" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
