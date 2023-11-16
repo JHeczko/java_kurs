@@ -20,6 +20,7 @@ public class StudyMaterial implements StudentResource{
     public void setName(String name){
         this.name = name;
     }
+    @Override
     public void setId(String id){
         this.id = id;
     }
