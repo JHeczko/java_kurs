@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-class noElementInListException extends Exception{
-    public noElementInListException(String messege){
+class NoElementInListException extends Exception{
+    public NoElementInListException(String messege){
         super(messege);
     }
 }
@@ -36,13 +36,13 @@ public class StudentResourceManager<T extends StudentResource> {
         }
         return -1;
     }
-    public void deleteResource(String id) throws noElementInListException{
+    public void deleteResource(String id) throws NoElementInListException{
         int pos = findResource(id);
         if(pos != -1){
             resources.remove(pos);
         }
         else{
-            throw new noElementInListException("No element in list");
+            throw new NoElementInListException("No element in list");
         }
     }
     public boolean isEmpty(){

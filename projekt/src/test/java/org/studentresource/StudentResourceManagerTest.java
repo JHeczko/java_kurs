@@ -49,7 +49,7 @@ class StudentResourceManagerTest {
         try{
             manager.deleteResource("CS101");
         }
-        catch(noElementInListException e){
+        catch(NoElementInListException e){
             System.out.println(e.getMessage());
         }
 
