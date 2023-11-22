@@ -1,0 +1,10 @@
+1, Apple, 0.99
+2, Orange, 1.29
+3, Banana, 0.49
+4, Laptop, 999.99
+5, Headphones, 59.99
+6, Coffee Mug, 4.99
+7, Notebook, 2.99
+8, Pen, 0.39
+9, Water Bottle, 10.99
+10, Backpack, 49.99
