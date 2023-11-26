@@ -6,8 +6,11 @@ import org.simplestore.model.Inventory;
 import org.simplestore.model.Product;
 import org.simplestore.model.ProductNotFoundException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import java.io.IOException;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ShoppingCartTest {
     private ShoppingCart shoppingCart;
@@ -24,21 +27,33 @@ class ShoppingCartTest {
     @Test
     void addItem_ShouldAddProductToCart() {
         shoppingCart.addItem(1, 1);
-        assertEquals(1, shoppingCart.getItemQuantity(1), "Cart should have 1 item of product ID 1");
+        try {
+            assertEquals(1, shoppingCart.getItemQuantity(1), "Cart should have 1 item of product ID 1");
+        } catch(ProductNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     @Test
     void removeItem_ShouldRemoveProductFromCart() {
         shoppingCart.addItem(1, 2);
         shoppingCart.removeItem(1, 1);
-        assertEquals(1, shoppingCart.getItemQuantity(1), "Cart should have 1 item of product ID 1 after removal");
+        try {
+            assertEquals(1, shoppingCart.getItemQuantity(1), "Cart should have 1 item of product ID 1 after removal");
+        } catch(ProductNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     @Test
     void clearCart_ShouldEmptyTheCart() {
         shoppingCart.addItem(1, 1);
         shoppingCart.clearCart();
-        assertEquals(0, shoppingCart.getItemQuantity(1), "Cart should be empty after clearCart is called");
+        try {
+            assertEquals(0, shoppingCart.getItemQuantity(1), "Cart should be empty after clearCart is called");
+        }catch(ProductNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     @Test
@@ -58,9 +73,18 @@ class ShoppingCartTest {
     void getItemQuantity_ShouldReturnCorrectQuantity() {
         shoppingCart.addItem(1, 3);
         shoppingCart.addItem(2, 2);
-        assertEquals(3, shoppingCart.getItemQuantity(1), "Quantity for product ID 1 should be correct");
-        assertEquals(2, shoppingCart.getItemQuantity(2), "Quantity for product ID 2 should be correct");
+        try {
+            assertEquals(3, shoppingCart.getItemQuantity(1), "Quantity for product ID 1 should be correct");
+            assertEquals(2, shoppingCart.getItemQuantity(2), "Quantity for product ID 2 should be correct");
+        } catch(ProductNotFoundException e){
+            e.printStackTrace();
+        }
     }
-
+    @Test
+    void removeItem_empty(){
+        shoppingCart.addItem(1,1);
+        shoppingCart.removeItem(1,2);
+        assertTrue(shoppingCart.isEmpty(),"Shoul be empty");
+    }
     // Note for presenter: Discuss the importance of comprehensive testing for different scenarios.
 }

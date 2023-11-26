@@ -12,9 +12,7 @@ public class InventoryLoader {
     public static void loadInventory(String filePath, Inventory inventory) {
 
         // TODO: Refactor this method to use try-with-resource for better resource management.
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader(filePath));
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))){
             String line;
             // TODO: Implement error handling for file reading and parsing,
             //  eg. by handling NumberFormatException
@@ -26,16 +24,10 @@ public class InventoryLoader {
                 double price = Double.parseDouble(parts[2].trim());
                 inventory.addProduct(new Product(id, name, price));
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+        }catch(NumberFormatException e){
+            System.err.println(e.getMessage());
+        } catch(IOException | IllegalArgumentException e) {
+            System.err.println(e.getMessage());
         }
     }
 }

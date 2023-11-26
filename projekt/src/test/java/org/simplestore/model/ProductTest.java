@@ -21,7 +21,6 @@ class ProductTest {
     void productToStringTest() {
         // Create a product instance
         Product product = new Product(2, "Another Product", 20.0);
-
         // Check if the toString method returns the correct format
         String expectedString = "Product{id=2, name='Another Product', price=20.0}";
         assertEquals(expectedString, product.toString(), "The toString method should return a correctly formatted string");
