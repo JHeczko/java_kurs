@@ -27,7 +27,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/../../java2023public" value="lab05" />
-        <entry key="$PROJECT_DIR$/.." value="kolokwium" />
+        <entry key="$PROJECT_DIR$/.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -234,7 +234,9 @@
       <workItem from="1701243735605" duration="1011000" />
       <workItem from="1701244753112" duration="250000" />
       <workItem from="1701285485137" duration="322000" />
-      <workItem from="1702414128512" duration="332000" />
+      <workItem from="1702414128512" duration="548000" />
+      <workItem from="1702414681450" duration="33000" />
+      <workItem from="1702414722159" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="first maven project">
       <option name="closed" value="true" />
