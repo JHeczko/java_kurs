@@ -32,7 +32,7 @@ build/
 !**/src/test/**/build/
 
 ./target
-
+./.idea
 ### VS Code ###
 .vscode/
 
