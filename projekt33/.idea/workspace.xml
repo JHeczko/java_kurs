@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9185ade2-3eac-464e-a54a-8076a93c5157" name="Changes" comment="lab05 git ignore" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../java2023public" value="lab05" />
+        <entry key="$PROJECT_DIR$/.." value="kolokwium" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c0a4362f-bd17-4cfd-9027-7a2b10976188" />
+        <option name="url" value="git@github.com:JHeczko/java2023.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2WuLQYEt0SvlrpaCaUnj3PQHazH" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab02&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jakubheczko/Documents/Java/java_zadania/projekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/org" />
+      <recent name="$PROJECT_DIR$/src/test/java/org" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.studentresource.decorator" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.leapyear" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CommentableResourceTest">
+    <configuration name="CommentableAndRateableResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.studentresource.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.studentresource.decorator" />
+      <option name="MAIN_CLASS_NAME" value="org.studentresource.decorator.CommentableAndRateableResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentableAndRateableResourceTest.testCommentAndRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.studentresource.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.studentresource.decorator" />
+      <option name="MAIN_CLASS_NAME" value="org.studentresource.decorator.CommentableAndRateableResourceTest" />
+      <option name="METHOD_NAME" value="testCommentAndRating" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentableResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.studentresource.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.studentresource.decorator" />
+      <option name="MAIN_CLASS_NAME" value="org.studentresource.decorator.CommentableResourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeapYearCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java2023public" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.leapyear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.leapyear" />
+      <option name="MAIN_CLASS_NAME" value="org.leapyear.LeapYearCalculatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeapYearCalculatorTest.testLeapYear (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projekt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.leapyear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.leapyear" />
+      <option name="MAIN_CLASS_NAME" value="org.leapyear.LeapYearCalculatorTest" />
+      <option name="METHOD_NAME" value="testLeapYear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LeapYearCalculatorTest.testLeapYear (1)" />
+        <item itemvalue="JUnit.LeapYearCalculatorTest" />
+        <item itemvalue="JUnit.CommentableResourceTest" />
+        <item itemvalue="JUnit.CommentableAndRateableResourceTest.testCommentAndRating" />
+        <item itemvalue="JUnit.CommentableAndRateableResourceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9185ade2-3eac-464e-a54a-8076a93c5157" name="Changes" comment="" />
+      <created>1697577504836</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697577504836</updated>
+      <workItem from="1697577505878" duration="231000" />
+      <workItem from="1697610992987" duration="687000" />
+      <workItem from="1697611685778" duration="2204000" />
+      <workItem from="1697614065904" duration="401000" />
+      <workItem from="1697614484436" duration="4829000" />
+      <workItem from="1697643005104" duration="958000" />
+      <workItem from="1697649764849" duration="1639000" />
+      <workItem from="1697651735826" duration="71000" />
+      <workItem from="1698215652074" duration="7334000" />
+      <workItem from="1698261262893" duration="9253000" />
+      <workItem from="1698357928643" duration="4190000" />
+      <workItem from="1699427396440" duration="229000" />
+      <workItem from="1700036786713" duration="1912000" />
+      <workItem from="1700052590597" duration="47000" />
+      <workItem from="1700052639824" duration="38000" />
+      <workItem from="1700052679891" duration="61000" />
+      <workItem from="1700052743539" duration="17000" />
+      <workItem from="1700052920640" duration="261000" />
+      <workItem from="1700084443390" duration="3966000" />
+      <workItem from="1700173329961" duration="2868000" />
+      <workItem from="1700236087545" duration="8643000" />
+      <workItem from="1700569549631" duration="114000" />
+      <workItem from="1700636792467" duration="2589000" />
+      <workItem from="1700641221327" duration="617000" />
+      <workItem from="1700641842024" duration="107000" />
+      <workItem from="1700641980098" duration="99000" />
+      <workItem from="1700642099271" duration="1478000" />
+      <workItem from="1700687026301" duration="2392000" />
+      <workItem from="1700776937504" duration="2207000" />
+      <workItem from="1700832444290" duration="6413000" />
+      <workItem from="1700853499205" duration="1702000" />
+      <workItem from="1700864817468" duration="7321000" />
+      <workItem from="1700960732875" duration="2511000" />
+      <workItem from="1700964512275" duration="114000" />
+      <workItem from="1701243735605" duration="1011000" />
+      <workItem from="1701244753112" duration="250000" />
+      <workItem from="1701285485137" duration="322000" />
+      <workItem from="1702414128512" duration="332000" />
+    </task>
+    <task id="LOCAL-00001" summary="first maven project">
+      <option name="closed" value="true" />
+      <created>1697577554663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697577554664</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changes">
+      <option name="closed" value="true" />
+      <created>1697577603173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697577603173</updated>
+    </task>
+    <task id="LOCAL-00003" summary="zadanie gotowe">
+      <option name="closed" value="true" />
+      <created>1697650960063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697650960063</updated>
+    </task>
+    <task id="LOCAL-00004" summary="zadanie gotowe">
+      <option name="closed" value="true" />
+      <created>1697650971344</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697650971344</updated>
+    </task>
+    <task id="LOCAL-00005" summary="setup">
+      <option name="closed" value="true" />
+      <created>1698219609888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698219609888</updated>
+    </task>
+    <task id="LOCAL-00006" summary="setup-improved">
+      <option name="closed" value="true" />
+      <created>1698231055185</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698231055185</updated>
+    </task>
+    <task id="LOCAL-00007" summary="basicly-done, need to add subclasses">
+      <option name="closed" value="true" />
+      <created>1698276149064</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698276149064</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done">
+      <option name="closed" value="true" />
+      <created>1698361762609</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698361762609</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Setup">
+      <option name="closed" value="true" />
+      <created>1700048622092</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700048622092</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Setup">
+      <option name="closed" value="true" />
+      <created>1700087867199</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700087867199</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implemented working decorator">
+      <option name="closed" value="true" />
+      <created>1700175366279</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700175366279</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Done, implemented new methods to maneger, and also upgraded tests">
+      <option name="closed" value="true" />
+      <created>1700265663537</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700265663537</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Little changes(class names to upper case)">
+      <option name="closed" value="true" />
+      <created>1700639183793</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700639183793</updated>
+    </task>
+    <task id="LOCAL-00014" summary="setup">
+      <option name="closed" value="true" />
+      <created>1700643602874</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700643602874</updated>
+    </task>
+    <task id="LOCAL-00015" summary="setup">
+      <option name="closed" value="true" />
+      <created>1700643674825</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700643674825</updated>
+    </task>
+    <task id="LOCAL-00016" summary="done except main class">
+      <option name="closed" value="true" />
+      <created>1700961746125</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700961746125</updated>
+    </task>
+    <task id="LOCAL-00017" summary="main done">
+      <option name="closed" value="true" />
+      <created>1700962748203</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700962748203</updated>
+    </task>
+    <task id="LOCAL-00018" summary="lab05 git ignore">
+      <option name="closed" value="true" />
+      <created>1701243927279</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701243927279</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="15" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="161" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lab06" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first maven project" />
+    <MESSAGE value="changes" />
+    <MESSAGE value="zadanie gotowe" />
+    <MESSAGE value="setup-improved" />
+    <MESSAGE value="basicly-done, need to add subclasses" />
+    <MESSAGE value="done" />
+    <MESSAGE value="setup_v2" />
+    <MESSAGE value="Setup" />
+    <MESSAGE value="Implemented working decorator" />
+    <MESSAGE value="Done, implemented new methods to maneger, and also upgraded tests" />
+    <MESSAGE value="Little changes(class names to upper case)" />
+    <MESSAGE value="setup" />
+    <MESSAGE value="done except main class" />
+    <MESSAGE value="main done" />
+    <MESSAGE value="lab05 git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab05 git ignore" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+org/studentresource/StudentResource.class
+org/studentresource/NoElementInListException.class
+org/studentresource/decorator/RateableResource.class
+org/studentresource/decorator/CommentableResource.class
+org/studentresource/StudentResourceManager.class
+org/studentresource/StudyMaterial.class
+org/studentresource/Course.class
+org/studentresource/decorator/ResourceDecorator.class

@@ -1,0 +1,3 @@
+org/studentresource/StudentResourceManagerTest.class
+org/studentresource/decorator/CommentableAndRateableResourceTest.class
+org/studentresource/decorator/CommentableResourceTest.class
