@@ -7,7 +7,7 @@ public class Office extends Building{
         this.employees = employees;
     }
     public void operate(){
-        System.out.println("Shop at " + getAdress() + " has " + getFloors() + "floors and" + "has: " + this.employees + "employees");
+        System.out.println("Shop at " + getAdress() + " has " + getFloors() + " floors and " + " has: " + this.employees + " employees");
     }
     void setType(int employees){
         this.employees = employees;

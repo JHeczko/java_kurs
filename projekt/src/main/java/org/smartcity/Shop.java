@@ -7,7 +7,7 @@ public class Shop extends Building{
         this.type = type;
     }
     public void operate(){
-        System.out.println("Shop at " + getAdress() + " has " + getFloors() + "floors and" + "is: " + this.type + "type");
+        System.out.println("Shop at " + getAdress() + " has " + getFloors() + "floors and " + " is: " + this.type + " type");
     }
     void setType(String type){
         this.type = type;

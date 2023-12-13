@@ -7,7 +7,7 @@ public class Apartment extends Building{
         this.residents = residents;
     }
     public void operate(){
-        System.out.println("Apartment at " + getAdress() + " has " + getFloors() + "floors and" + "has: " + this.residents + "residents");
+        System.out.println("Apartment at " + getAdress() + " has " + getFloors() + " floors and has: " + this.residents + " residents");
     }
     void setType(int residents){
         this.residents = residents;
