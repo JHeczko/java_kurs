@@ -1,6 +1,7 @@
 package org.smartcity;
 
 import java.util.Random;
+import java.util.ArrayList;
 
 public class CitySimulation {
     public static void main(String[] args) {
@@ -9,6 +10,26 @@ public class CitySimulation {
         // Symulacja trwa przez 10 "dni"
         for (int day = 1; day <= 10; day++) {
             System.out.println("Day " + day + " in Smart City");
+            Thread myThread;
+            Random random = new Random();
+            boolean randomBool = random.nextBoolean();
+            if(randomBool){
+                Building newBuilding = createRandomBuilding(day);
+                city.addBuilding(newBuilding);
+                myThread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        newBuilding.operate();
+                    }
+                });
+                try{
+                    myThread.start();
+                    myThread.join();
+                }catch (IllegalThreadStateException | InterruptedException e){
+                    e.printStackTrace();
+                }
+
+            }
 
             // 1. TODO Losowe tworzenie nowych budynków
             // Losowo zadecyduj, czy dodać nowy budynek do miasta - jeśli ma byc dodany
