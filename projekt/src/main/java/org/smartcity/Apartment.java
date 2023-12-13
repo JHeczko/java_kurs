@@ -9,10 +9,10 @@ public class Apartment extends Building{
     public void operate(){
         System.out.println("Apartment at " + getAdress() + " has " + getFloors() + " floors and has: " + this.residents + " residents");
     }
-    void setType(int residents){
+    void setResidents(int residents){
         this.residents = residents;
     }
-    int getType(){
+    int getResidents(){
         return this.residents;
     }
 }

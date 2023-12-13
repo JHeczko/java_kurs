@@ -29,7 +29,6 @@ public class CitySimulation {
                     } catch (IllegalThreadStateException | InterruptedException e) {
                         e.printStackTrace();
                     }
-
                 }
             }
             // 1. TODO Losowe tworzenie nowych budynków

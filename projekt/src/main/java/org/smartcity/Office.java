@@ -9,10 +9,10 @@ public class Office extends Building{
     public void operate(){
         System.out.println("Shop at " + getAdress() + " has " + getFloors() + " floors and " + " has: " + this.employees + " employees");
     }
-    void setType(int employees){
+    void setEmployees(int employees){
         this.employees = employees;
     }
-    int getType(){
+    int getEmployees(){
         return this.employees;
     }
 }
