@@ -14,14 +14,11 @@ import org.starmap.model.Star;
 
 public class DataWriter {
 
-    private StarMapController controller;
-    public DataWriter(StarMapController controller){
-        this.controller = controller;
-    }
+    public DataWriter(){}
 
-    void writeToJsonFile(String fileName) throws IOException, ObjectStreamException {
-        List<Star> stars = this.controller.getStars();
-        List<Constellation> constellations = this.controller.getConstellations();
+    void writeToJsonFile(String filePath, StarMapController controller) throws IOException, ObjectStreamException {
+        List<Star> stars = controller.getStars();
+        List<Constellation> constellations = controller.getConstellations();
         
         JSONObject fileObject = new JSONObject(); //Output Object
         JSONArray arrStars = new JSONArray();
@@ -54,7 +51,7 @@ public class DataWriter {
         fileObject.put("stars",arrStars);
         
         //Create and write to a file
-        FileWriter fileWriter = new FileWriter("src/main/resources/"+fileName.toLowerCase()+".json");
+        FileWriter fileWriter = new FileWriter(filePath);
         fileWriter.write(fileObject.toString());
         fileWriter.close();
     }

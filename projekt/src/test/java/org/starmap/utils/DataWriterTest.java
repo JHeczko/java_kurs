@@ -68,8 +68,8 @@ public class DataWriterTest {
     }
     @Test
     void isFilesTheSame() throws IOException{
-       DataWriter dataWriter = new DataWriter(starMapController);
-       dataWriter.writeToJsonFile("test");
+       DataWriter dataWriter = new DataWriter();
+       dataWriter.writeToJsonFile("src/main/resources/test.json",starMapController);
 
        //Delete created file after test
        File my_file = new File("src/main/resources/test.json");

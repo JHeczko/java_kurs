@@ -1,14 +1,19 @@
 package org.starmap.view;
 
+import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.util.Duration;
+import javafx.scene.control.*;
 import org.starmap.controller.StarMapController;
 import org.starmap.model.Constellation;
 import org.starmap.model.Star;
+
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,19 +22,34 @@ import java.util.Random;
 
 public class StarMapView extends Canvas {
     private final StarMapController controller;
+    private boolean gridFlag;
     private PauseTransition pause = new PauseTransition(Duration.seconds(0.5));
     private Star currentHoveredStar = null;
     private Map<String, Color> constellationColors = new HashMap<>();
 
+    public StarMapController getController(){
+        return controller;
+    }
+
     public StarMapView(StarMapController controller) {
         this.controller = controller;
-        this.setWidth(1024); // Set canvas width
+        this.gridFlag = false;
+        this.setWidth(768); // Set canvas width
         this.setHeight(768); // Set canvas height
         drawMap();
         initializeConstellationColors();
         addMouseMotionListener();
     }
 
+    public void resize(double height,double width){
+        this.setWidth(width);
+        this.setHeight(height);
+        drawMap();
+        if(gridFlag){
+            gridFlag = false;
+            showGrid();
+        }
+    }
     private void initializeConstellationColors() {
         List<Constellation> constellations = controller.getConstellations();
         for (Constellation constellation : constellations) {
@@ -40,12 +60,41 @@ public class StarMapView extends Canvas {
         }
     }
 
+    public void showGrid(){
+        gridFlag = true;
+        GraphicsContext gc = this.getGraphicsContext2D();
+        gc.setStroke(Color.MIDNIGHTBLUE);
+        gc.setFill(Color.LIGHTBLUE);
+        gc.setFont(new Font("Arial",10));
+
+        gc.setLineWidth(2);
+        double height = this.getHeight();
+        double width = this.getWidth();
+
+        gc.strokeLine(this.getLayoutX(), this.getLayoutBounds().getMinY() + (height / 2), this.getLayoutX() + width, this.getLayoutBounds().getMinY() + (height / 2));
+        gc.strokeLine(this.getLayoutX() + 1, this.getLayoutBounds().getMinY(), this.getLayoutX() + 1, this.getLayoutBounds().getMaxY());
+        //Printing y scale on grid
+        for (Double i = this.getLayoutBounds().getMinY(); i < this.getLayoutBounds().getMaxY(); i += 100) {
+            gc.fillText(i.toString(), this.getLayoutBounds().getMinX(), i);
+        }
+        for (Double i = this.getLayoutBounds().getMinX(); i < this.getLayoutBounds().getMaxX(); i += 100) {
+            gc.fillText(i.toString(), i, this.getLayoutBounds().getMinY() + (height / 2));
+        }
+    }
+    public void hideGrid(){
+        gridFlag = false;
+        clearCanvas();
+        drawMap();
+    }
     public void drawMap() {
         GraphicsContext gc = getGraphicsContext2D();
         gc.setFill(Color.BLACK);
         gc.fillRect(0, 0, getWidth(), getHeight()); // Set background to black
         drawStars();
         drawConstellations();
+        if(gridFlag){
+            showGrid();
+        }
     }
 
     private void drawStars() {
@@ -99,6 +148,27 @@ public class StarMapView extends Canvas {
     }
 
     private void addMouseMotionListener() {
+        this.setOnMouseDragged(mouseDragEvent -> {
+            double mouseX = mouseDragEvent.getX();
+            double mouseY = mouseDragEvent.getY();
+
+            Star foundStar = null;
+
+            List<Star> stars = controller.getStars();
+            for (Star star : stars) {
+                if (Math.abs(mouseX - star.getXPosition()) < 35 && Math.abs(mouseY - star.getYPosition()) < 35) {
+                    foundStar = star;
+                    break;
+                }
+            }
+
+            if(foundStar != null){
+                foundStar.setxPosition(mouseX);
+                foundStar.setyPosition(mouseY);
+            }
+            System.out.println(mouseX + " " + mouseY);
+            drawMap();
+        });
         this.setOnMouseMoved(event -> {
             double mouseX = event.getX();
             double mouseY = event.getY();
@@ -137,6 +207,9 @@ public class StarMapView extends Canvas {
             pause.setOnFinished(e -> {
                 clearCanvas();
                 drawMap(); // Rysuj wszystko od nowa
+                if(gridFlag){
+                    showGrid();
+                }
             });
             pause.playFromStart();
         }

@@ -49,8 +49,11 @@ public class StarMapController {
     }
 
     // Remove a star from the map
-    public void removeStar(String name) {
-        stars.removeIf(star -> star.getName().equalsIgnoreCase(name));
+    public synchronized void removeStar(String name) {
+            stars.removeIf(star -> star.getName().equalsIgnoreCase(name));
+            for(Constellation c : constellations){
+                c.getStars().removeIf(star -> star.getName().equalsIgnoreCase(name));
+            }
     }
 
     // Add a new constellation to the map
