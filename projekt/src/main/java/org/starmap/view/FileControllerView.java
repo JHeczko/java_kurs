@@ -1,17 +1,12 @@
 package org.starmap.view;
 
-import com.sun.javafx.tk.quantum.WindowStage;
-import javafx.scene.Scene;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import org.starmap.controller.FileMenagmentController;
 import org.starmap.controller.StarMapController;
 import org.starmap.model.Constellation;
 import org.starmap.model.Star;
 
-import java.io.File;
 import java.util.List;
-import java.util.Optional;
+
 
 
 public class FileControllerView {

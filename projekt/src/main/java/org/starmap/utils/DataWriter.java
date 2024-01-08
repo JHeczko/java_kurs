@@ -2,7 +2,6 @@ package org.starmap.utils;
 
 import java.io.*;
 import java.util.List;
-import java.util.logging.FileHandler;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

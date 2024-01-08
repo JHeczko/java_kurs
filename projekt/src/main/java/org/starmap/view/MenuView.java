@@ -1,13 +1,10 @@
 package org.starmap.view;
 
-import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
-import javafx.util.Pair;
 import org.starmap.controller.StarMapController;
 import org.starmap.model.Constellation;
 import org.starmap.model.Star;
@@ -18,7 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static java.lang.Thread.sleep;
 
 class MultipleDialogInput extends TextInputDialog{
 

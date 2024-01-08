@@ -1,22 +1,16 @@
 package org.starmap;
 
 import javafx.application.Application;
-import javafx.event.EventType;
-import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.control.*;
-import org.starmap.controller.FileMenagmentController;
 import org.starmap.controller.StarMapController;
 import org.starmap.view.FileControllerView;
 import org.starmap.view.MenuView;
 import org.starmap.view.StarMapView;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 

@@ -4,11 +4,9 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.starmap.model.Constellation;
 import org.starmap.model.Star;
-import org.starmap.view.FileControllerView;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectStreamException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
