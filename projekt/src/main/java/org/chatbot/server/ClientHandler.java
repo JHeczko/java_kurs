@@ -2,6 +2,7 @@ package org.chatbot.server;
 
 import org.chatbot.database.DatabaseConnection;
 import org.chatbot.logic.ChatbotLogic;
+import org.chatbot.logic.CommandConstants;
 import org.chatbot.response.Response;
 
 import java.io.BufferedReader;
@@ -17,11 +18,11 @@ public class ClientHandler implements Runnable {
 
     public ClientHandler(Socket socket) throws IOException, SQLException {
         this.clientSocket = socket;
-        this.chatbotLogic = new ChatbotLogic(new DatabaseConnection("jdbc:mysql://localhost/chatbot_db", "chatbot-app", "I&l0veJ4v4!"));
+        this.chatbotLogic = new ChatbotLogic(new DatabaseConnection("jdbc:mysql://localhost/chatbot_db", "chatbot-app", "fjbh124555b&jkkj@@232"));
     }
 
     @Override
-    public void run() {
+    public void run(){
         try (BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)) {
 
@@ -31,10 +32,13 @@ public class ClientHandler implements Runnable {
 
             // TODO: Implementacja wysyłania wiadomości powitalnej i odbioru odpowiedzi od klienta
             //  oraz odbiór i przetwarzanie wiadomości od klienta
-            String inputLine;
-            // while (...) {
-                // ...
-            // }
+            String inputLine = null;
+             while ((inputLine = in.readLine()) != "exit") {
+                 System.out.println("Cos");
+                 System.out.println(inputLine);
+                 Response response = chatbotLogic.processInput(inputLine);
+                 out.println(response.getMessage());
+             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

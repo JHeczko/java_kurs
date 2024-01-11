@@ -7,7 +7,7 @@ import org.chatbot.response.ResponseType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class ChatbotLogic {
+public class  ChatbotLogic {
     private IDatabaseConnection dbConnection;
     private boolean awaitingConfirmation;
     private int pendingReservationId;
@@ -35,9 +35,14 @@ public class ChatbotLogic {
 
             if (input.equalsIgnoreCase(CommandConstants.SHOW_RESERVATIONS)) {
                 ResultSet rs = dbConnection.listReservations();
-                StringBuilder sb = new StringBuilder(ResponseType.RESERVATION_LIST.getMessage() + "\n");
+                StringBuilder sb = new StringBuilder(ResponseType.RESERVATION_LIST.getMessage());
                 // TODO Logika wyświetlania rezerwacji
-                // ...
+                while(rs.next()){
+                    sb.append("ID: " + rs.getInt("id"));
+                    sb.append("| Customer name: " + rs.getString("customer_name"));
+                    sb.append("| Reservation Time: " + rs.getString("reservation_time"));
+                    sb.append("| Number Of guests: " + rs.getInt("number_of_guests"));
+                }
                 rs.close();
                 return new Response(ResponseType.RESERVATION_LIST, sb.toString());
             }
@@ -60,10 +65,12 @@ public class ChatbotLogic {
             if (input.startsWith(CommandConstants.DELETE_RESERVATION)) {
                 try {
                     // TODO: Implementacja usuwania rezerwacji - przeparsuj reservationId z odpowiedzi klienta
-                    // int reservationId = ...;
+                    String idString = input.replaceAll("\\D", "");
+                    int reservationId = Integer.parseInt(idString); // to do
                     pendingReservationId = reservationId;
                     awaitingConfirmation = true;
                     return new Response(ResponseType.CONFIRMATION_REQUEST, ResponseType.CONFIRMATION_REQUEST.getMessage(reservationId));
+
                 } catch (NumberFormatException e) {
                     return new Response(ResponseType.INVALID_RESERVATION_ID_FORMAT, ResponseType.INVALID_RESERVATION_ID_FORMAT.getMessage());
                 }

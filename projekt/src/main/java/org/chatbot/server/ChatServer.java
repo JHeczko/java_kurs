@@ -25,7 +25,7 @@ public class ChatServer {
 
     public static void main(String[] args) {
         try {
-            ChatServer server = new ChatServer(1234); // Use any free port
+            ChatServer server = new ChatServer(1235); // Use any free port
             server.startServer();
         } catch (IOException e) {
             e.printStackTrace();

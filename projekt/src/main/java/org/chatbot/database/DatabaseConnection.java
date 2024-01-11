@@ -1,9 +1,7 @@
 package org.chatbot.database;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import javax.swing.plaf.nimbus.State;
+import java.sql.*;
 
 public class DatabaseConnection implements IDatabaseConnection {
     private Connection connection;
@@ -17,7 +15,9 @@ public class DatabaseConnection implements IDatabaseConnection {
     public void addReservation(String customerName, String reservationTime, int numberOfGuests) throws SQLException {
         // TODO: Implementacja metody dodającej rezerwację do bazy danych
         //  Użyj try with resource lub zamknij statement
-        String sql = "INSERT ...";
+        String sql = "INSERT INTO reservations (customer_name, reservation_time, number_of_guests) VALUES ('" + customerName + "', '" + reservationTime + "', '" + numberOfGuests + "')";
+        Statement statement = connection.createStatement();
+        statement.executeUpdate(sql);
         // ...
     }
 
@@ -25,17 +25,17 @@ public class DatabaseConnection implements IDatabaseConnection {
     public void deleteReservation(int reservationId) throws SQLException {
         // TODO: Implementacja metody usuwającej rezerwację z bazy danych
         //  Użyj try with resource lub zamknij statement
-        String sql = "DELETE ...";
-        // ...
+        String sql = "DELETE FROM reservations WHERE id='"+reservationId+"'";
+        connection.createStatement().executeUpdate(sql);
     }
 
     @Override
     public ResultSet listReservations() throws SQLException {
         // TODO: Implementacja metody zwracającej listę rezerwacji z bazy danych
         //  Nie zamykaj w tym miejscu ResultSet.
-        String sql = "SELECT ...";
-        // ...
-        return null;
+        String sql = "SELECT id,customer_name,reservation_time,number_of_guests FROM reservations";
+        ResultSet resultSet = connection.createStatement().executeQuery(sql);
+        return resultSet;
     }
 
     // TODO: Metoda do zamknięcia połączenia z bazą danych
