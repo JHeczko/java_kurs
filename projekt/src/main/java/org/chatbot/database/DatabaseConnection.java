@@ -1,6 +1,5 @@
 package org.chatbot.database;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
 
 public class DatabaseConnection implements IDatabaseConnection {
@@ -18,7 +17,9 @@ public class DatabaseConnection implements IDatabaseConnection {
         String sql = "INSERT INTO reservations (customer_name, reservation_time, number_of_guests) VALUES ('" + customerName + "', '" + reservationTime + "', '" + numberOfGuests + "')";
         Statement statement = connection.createStatement();
         statement.executeUpdate(sql);
-        // ...
+        if((!statement.isClosed()) && statement != null){
+            statement.close();
+        }
     }
 
     @Override
@@ -26,7 +27,11 @@ public class DatabaseConnection implements IDatabaseConnection {
         // TODO: Implementacja metody usuwającej rezerwację z bazy danych
         //  Użyj try with resource lub zamknij statement
         String sql = "DELETE FROM reservations WHERE id='"+reservationId+"'";
-        connection.createStatement().executeUpdate(sql);
+        Statement stm = connection.createStatement();
+        stm.executeUpdate(sql);
+        if((!stm.isClosed()) && stm != null){
+            stm.close();
+        }
     }
 
     @Override

@@ -2,7 +2,6 @@ package org.chatbot.server;
 
 import org.chatbot.database.DatabaseConnection;
 import org.chatbot.logic.ChatbotLogic;
-import org.chatbot.logic.CommandConstants;
 import org.chatbot.response.Response;
 
 import java.io.BufferedReader;
