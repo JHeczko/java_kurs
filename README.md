@@ -1,2 +1,2 @@
-# Zadanie 1
-Napisac program, ktory sprawdzi czy rok jest przestepny
+# Exercise 2
+Program that simulates a board game of life, when creatures fight in battle royal
